@@ -276,35 +276,84 @@ body {
 
 .setting__title {}
 
-.setting__company-name {}
+.setting__company-name {
+    color: #FBBF00;
+}
 
-.setting__box {}
+.setting__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
 
-.setting__item {}
+.setting__item {
+    width: 320px;
+    height: 378px;
 
-.setting__item-img {}
+    border: 2px solid #000000;
+    border-radius: 40px;
+    text-align: center;
+}
 
-.setting__img {}
+.setting__item-img {
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
 
-.setting__text {}
+.setting__img {
+    margin: 0 auto;
+}
 
-.arrow {}
+.setting__text {
+    width: 193px;
+    margin: 0 auto;
+}
 
-.setting__link {}
+.arrow {
+    margin: 10px auto;
+}
 
-.text--orange {}
+.setting__link {
+    text-decoration: none;
+    color: #FBBF00;
+}
+
+.setting__link:hover {
+    text-decoration-line: underline;
+}
+
+.text--orange {
+    color: #FBBF00;
+}
 
 .reviews {}
 
 .reviews__title {}
 
-.reviews__box {}
+.reviews__box {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
 
-.reviews__item {}
+.reviews__item {
+    width: 480px;
+}
 
 .reviews__name {}
 
-.reviews__date {}
+.reviews__date {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 16px;
+    color: #888888;
+
+}
 
 .reviews__text {}
 
