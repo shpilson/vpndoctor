@@ -1,0 +1,361 @@
+/* Basic */
+
+@font-face {
+    font-family: "Courier New";
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: local("Courier New"), url('/fonts/courier-new.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: "Courier New";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Courier New"), url('/fonts/cour_new_bold.ttf') format('ttf');
+}
+
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: local("Montserrat"), url('/fonts/montserrat-regular.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local("Montserrat"), url('/fonts/montserrat-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: local("Montserrat"), url('/fonts/montserrat-600.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 900;
+    font-display: swap;
+    src: local("Montserrat"), url('/fonts/montserrat-900italic.woff2') format('woff2');
+}
+
+body {
+    font-family: "Courier New", sans-serif;
+}
+
+/* Styles */
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 40px;
+}
+
+.header__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__logo {}
+
+.header__logo-img {}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+}
+
+.header__menu-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.header__menu-list-item {
+    padding-left: 40px;
+}
+
+.header__menu-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.header__menu-link:hover {
+    text-decoration: underline;
+    color: #FBBF00;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.header__content-tagline {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+
+    color: #000000;
+}
+
+.header__content-company-name {
+    font-weight: 700;
+    color: #FBBF00;
+}
+
+.header__content-box {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+}
+
+.header__content-button {
+    width: 366px;
+    height: 84px;
+
+    background: #FBBF00;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.header__content-button:hover {
+    background: #FFCC01;
+}
+
+.header__content-description-box {
+    width: 400px;
+    padding-left: 50px;
+}
+
+.header__content-description {}
+
+.header__content-description-img {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+.header__content-img {
+    padding-right: 20px;
+}
+
+.ip {
+    background: url('/img/dash.svg');
+    background-repeat: no-repeat;
+    height: 110px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.ip__box {
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.ip__item {}
+
+.ip__title {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.ip__value {
+    color: #303030;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.vpn {}
+
+.vpn__about-box {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.vpn__info {
+    width: 584px;
+}
+
+.vpn__title {
+    padding-bottom: 50px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+
+    color: #000000;
+}
+
+.vpn__text {}
+
+.text--20 {
+    font-size: 20px;
+    color: #303030;
+}
+
+.vpn__schema {}
+
+.user__icon {}
+
+.advantages {}
+
+.advantages__title {}
+
+.advantages__box {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages__box-left {
+    width: 442px;
+}
+
+.advantages__item {
+    margin-bottom: 50px;
+}
+
+.advantages__item-subtitle {
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+
+    color: #000000;
+}
+
+.advantages__item-text {}
+
+.text--18 {
+    font-size: 18px;
+    color: #303030;
+}
+
+.advantages__box-right {
+    width: 442px;
+}
+
+.setting {}
+
+.setting__title {}
+
+.setting__company-name {}
+
+.setting__box {}
+
+.setting__item {}
+
+.setting__item-img {}
+
+.setting__img {}
+
+.setting__text {}
+
+.arrow {}
+
+.setting__link {}
+
+.text--orange {}
+
+.reviews {}
+
+.reviews__title {}
+
+.reviews__box {}
+
+.reviews__item {}
+
+.reviews__name {}
+
+.reviews__date {}
+
+.reviews__text {}
+
+.prices {}
+
+.prices__title {}
+
+.prices__banner {}
+
+.prices__banner-img {}
+
+.prices__content {}
+
+.prices__box {}
+
+.prices__item {}
+
+.prices__item-title {}
+
+.prices__item-price {}
+
+.prices__item-undertitle {}
+
+.prices__item-old-price {}
+
+.prices__subscription {}
+
+.prices__subtitle {}
+
+.prices__bonus-box {}
+
+.prices__bonus-box-left {}
+
+.prices__bonus-box-item {}
+
+.prices__bonus-box-img {}
+
+.prices__img {}
+
+.prices__bonus-box-text {}
+
+.prices__bonus-box-right {}
+
+.prices__button {}
+
+.prices__btn {}
+
+.footer {}
+
+.footer__copyright {}
+
+.footer__links {}
+
+.footer__link {}
