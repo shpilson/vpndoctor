@@ -193,6 +193,7 @@ body {
     color: #303030;
     font-weight: 400;
     font-size: 18px;
+    max-width: 500px;
 }
 
 .vpn {}

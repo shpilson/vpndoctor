@@ -12,7 +12,7 @@ fetch('https://ipapi.co/json/')
                 statusDiv.innerHTML = 'Не защищено';
             }
 
-            locationDiv.innerHTML = jsonData.country_name + ', ' + jsonData.city;
+            locationDiv.innerHTML = jsonData.country_code + ', ' + jsonData.city;
             ipDiv.innerHTML = jsonData.ip;
             hostnameDiv.innerHTML = jsonData.org;
 
