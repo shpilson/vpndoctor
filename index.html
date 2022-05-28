@@ -64,7 +64,7 @@
                 </h1>
 
                 <div class="header__content-box">
-                    <form action="#order">
+                    <form action="#modal__window">
                         <button class="header__content-button">
                             Заказать сейчас со скидкой 50%
                         </button>
@@ -421,10 +421,11 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="prices__button">
-                        <button class="prices__btn">Заказать сейчас</button>
-                    </div>
+                    <form action="#modal__window">
+                        <div class="prices__button">
+                            <button class="prices__btn">Заказать сейчас</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
@@ -445,7 +446,31 @@
 
     </div>
 
+
+    <!-- Pop-up windows / Всплывающие окна -->
+
+    <div id="modal__window">
+        <div class="modal__box">
+            <div class="modal__header">
+                <a class="close" href="#">x</a>
+                <div class="modal__title">Заказать настройку VPN</div>
+            </div>
+            <div class="modal__container" id="modal_callback">
+                <form id="contact-form" class="modal__body">
+                    <input class="modal__form-input" type="text" name="client_name" placeholder="Как к Вам обращаться?">
+                    <input class="modal__form-input" type="text" name="client_phone"
+                        placeholder="Телефон или @telegram">
+                    <input class="modal__form-input" type="text" name="message"
+                        placeholder="Установка удалённо или на месте?">
+                    <input class="modal__button" value="Отправить заявку" type="submit" id="button">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
     <script src="/js/ip.js" defer></script>
+    <script src="/js/jquery.min.js" defer></script>
 </body>
 
 </html>
