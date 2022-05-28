@@ -229,7 +229,7 @@
                             Заполните заявку на сайте
                         </div>
                         <img src="/img/arrow.svg" alt="arrow down" class="arrow">
-                        <a href="#order" class="setting__link">
+                        <a href="#modal__window" class="setting__link">
                             Перейти к заполнению
                         </a>
                     </div>
@@ -457,10 +457,11 @@
             </div>
             <div class="modal__container" id="modal_callback">
                 <form id="contact-form" class="modal__body">
-                    <input class="modal__form-input" type="text" name="client_name" placeholder="Как к Вам обращаться?">
-                    <input class="modal__form-input" type="text" name="client_phone"
+                    <input class="modal__form-input" type="text" name="client__name"
+                        placeholder="Как к Вам обращаться?">
+                    <input class="modal__form-input" type="text" name="client__phone"
                         placeholder="Телефон или @telegram">
-                    <input class="modal__form-input" type="text" name="message"
+                    <input class="modal__form-input" type="text" name="client__message"
                         placeholder="Установка удалённо или на месте?">
                     <input class="modal__button" value="Отправить заявку" type="submit" id="button">
                 </form>
@@ -471,6 +472,33 @@
 
     <script src="/js/ip.js" defer></script>
     <script src="/js/jquery.min.js" defer></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('user_fO3AyiyXbeULVSmOOKzg0');
+    </script>
+    <script type="text/javascript">
+        const btn = document.getElementById('button');
+
+        document.getElementById('contact-form')
+            .addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                btn.value = 'Отправка...';
+
+                const serviceID = 'default_service';
+                const templateID = 'template_4nym9la';
+
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'Успешно отправлено';
+                        alert('Заявка отправлена! Скоро мы свяжемся с Вами');
+                    }, (err) => {
+                        btn.value = 'Успешно отправлено';
+                        alert(JSON.stringify(err));
+                    });
+            });
+    </script>
 </body>
 
 </html>
